@@ -10,8 +10,8 @@ class App < Sinatra::Base
     erb:checkout
   end
   
-  configure do 
-  enable: session
+  configure  do 
+  enable: sessions
   set:session_secret, "secret"
 end
 
